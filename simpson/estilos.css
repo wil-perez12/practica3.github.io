@@ -1,0 +1,397 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-color: #000000;
+    box-sizing: border-box;
+    display: grid;
+    place-items: center;
+    margin-top: 1%;
+}
+
+/*Esferas gradiantes*/
+.esferas{
+    height: 230px;
+    width: 230px;
+    background-color: green;
+    border-radius: 50%;
+    position: absolute;
+    top: 19px;
+    left: 310px;
+    z-index: -1;
+}
+
+.esfera-gradiant_red{
+    background-image: linear-gradient(to top, #ffb703,
+    #fb8500,#ff006e);
+    position: absolute;
+    top: 19px;
+    left: 310px;
+    z-index: -1;
+}
+
+.esfera-gradiant_blue{
+    background-image: linear-gradient(to bottom, #0077b6,#02c39a);
+    position: absolute;
+    top: 300px;
+    left: 50%;
+    z-index: -1;
+    z-index: -1;
+}
+
+/*estilos al contendor*/
+
+.card{
+    width: 280px;
+    background-color: rgba(255, 255, 255,0.090);
+    backdrop-filter: blur(60px);
+    box-shadow: 4px 4px  rgba(0, 0, 0,0.090) ;
+    color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+/*estilos al titulo*/
+
+.card-title{
+    width: 90%;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/*estilos a la carta Moe*/
+
+.card-moe{
+    width: 95%;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255,0.0100);
+    backdrop-filter: blur(60px);
+    box-shadow: 4px 4px  rgba(0, 0, 0,0.090) ;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    transition: all 0.8s ease-in-out;
+}
+
+.card-moe_background{
+    height: 70px;
+    width: 70px;
+    margin: 5px;
+    border-radius: 8px;
+    background-color: #1e6091;
+    background-image: url(/imgYvideos/moe.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: all 0.8s ease-in-out;
+}
+
+.card-moe_second{
+    display: flex;
+    justify-content: space-around;
+    gap: 100px;
+}
+
+.card-moe_text{
+    font-size: 10px;
+    font-weight: bold;
+    transition: all 0.2s ease-out;
+}
+
+.card-moe_text p{
+    line-height:0;
+}
+
+.card-moe_number{
+    visibility: hidden;
+}
+
+/*efecto de hover a la carta Moe*/
+
+.card-moe:hover{
+    background-color: white;
+    transform: translateX(50px);
+}
+
+.card-moe:hover .card-moe_text{
+    color: #000000;
+    font-size: 12px;
+}
+
+.card-moe:hover .card-moe_number{
+    width: 30%;
+    margin-right:8px ;
+    visibility: visible;
+    color: #1e6091;
+    line-height: 2;
+}
+
+/*estilos a la carta Marge*/
+
+.card-marge{
+    width: 95%;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255,0.0100);
+    backdrop-filter: blur(60px);
+    box-shadow: 4px 4px  rgba(0, 0, 0,0.090) ;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    transition: all 0.8s ease-in-out;
+}
+
+.card-marge_background{
+    height: 70px;
+    width: 70px;
+    margin: 5px;
+    border-radius: 8px;
+    background-color: #1e6091;
+    background-image: url(/imgYvideos/marge.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: all 0.8s ease-in-out;
+}
+
+.card-marge_second{
+    display: flex;
+    justify-content: space-around;
+    gap: 100px;
+}
+
+.card-marge_text{
+    font-size: 10px;
+    font-weight: bold;
+    transition: all 0.2s ease-out;
+}
+
+.card-marge_text p{
+    line-height:1;
+ }
+ 
+ .card-marge_number{
+     visibility: hidden;
+ }
+
+/*efecto de hover a la carta Marge*/
+
+.card-marge:hover{
+    background-color: white;
+    transform: translateX(50px);
+}
+
+.card-marge:hover .card-marge_text{
+    color: #000000;
+    font-size: 11px;
+}
+
+.card-marge:hover .card-marge_number{
+    visibility: visible;
+    color: #1e6091;
+    margin-right:8px;
+    line-height: 2;
+}
+
+
+ /*estilos a la carta Homero*/
+ .card-homero{
+    width: 95%;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255,0.0100);
+    backdrop-filter: blur(60px);
+    box-shadow: 4px 4px  rgba(0, 0, 0,0.090) ;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    transition: all 0.8s ease-in-out;
+}
+
+ .card-homero_background{
+    height: 70px;
+    width: 70px;
+    margin: 5px;
+    border-radius: 8px;
+    background-color: #1e6091;
+    background-image: url(/imgYvideos/homero.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: all 0.8s ease-in-out;
+}
+
+.card-homero_second{
+    display: flex;
+    justify-content: space-around;
+    gap: 100px;
+}
+
+.card-homero_text{
+    font-size: 10px;
+    font-weight: bold;
+    transition: all 0.2s ease-out;
+}
+
+.card-homero_text p{
+    line-height:1;
+ }
+ 
+ .card-homero_number{
+     visibility: hidden;
+ }
+
+ /*efecto de hover a la carta Homero*/
+
+.card-homero:hover{
+    background-color: white;
+    transform: translateX(50px);
+}
+
+.card-homero:hover .card-homero_text{
+    color: #000000;
+    font-size: 12px;
+}
+
+.card-homero:hover .card-homero_number{
+    margin-right:8px ;
+    visibility: visible;
+    color: #1e6091;
+    line-height: 2;
+}
+
+
+/*estilos a la carta lisa*/
+
+.card-lisa{
+    width: 95%;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255,0.0100);
+    backdrop-filter: blur(60px);
+    box-shadow: 4px 4px  rgba(0, 0, 0,0.090) ;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    transition: all 0.8s ease-in-out;
+}
+
+.card-lisa_background{
+    height: 70px;
+    width: 70px;
+    margin: 5px;
+    border-radius: 8px;
+    background-color: #1e6091;
+    background-image: url(/imgYvideos/lisa.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: all 0.8s ease-in-out;
+}
+
+.card-lisa_second{
+    display: flex;
+    justify-content: space-around;
+    gap: 100px;
+}
+
+.card-lisa_text{
+    font-size: 10px;
+    font-weight: bold;
+    transition: all 0.2s ease-out;
+}
+
+.card-lisa_text p{
+   line-height:0;
+}
+
+.card-lisa_number{
+    visibility: hidden;
+}
+
+/*efecto de hover a la carta Lisa*/
+
+.card-lisa:hover{
+    background-color: white;
+    transform: translateX(50px);
+}
+
+.card-lisa:hover .card-lisa_text{
+    color: #000000;
+    font-size: 12px;
+}
+
+.card-lisa:hover .card-lisa_number{
+    width: 30%;
+    margin-right:8px ;
+    visibility: visible;
+    color: #1e6091;
+    line-height: 2;
+}
+
+/*estilos a la carta Bart*/
+
+.card-bart{
+    width: 95%;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255,0.0100);
+    backdrop-filter: blur(60px);
+    box-shadow: 4px 4px  rgba(0, 0, 0,0.090) ;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    transition: all 0.8s ease-in-out;
+}
+
+.card-bart_background{
+    height: 70px;
+    width: 70px;
+    margin: 5px;
+    border-radius: 8px;
+    background-color: #1e6091;
+    background-image: url(/imgYvideos/bart.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: all 0.8s ease-in-out;
+}
+
+.card-bart_second{
+    display: flex;
+    justify-content: space-around;
+    gap: 100px;
+}
+
+.card-bart_text{
+    font-size: 10px;
+    font-weight: bold;
+    transition: all 0.2s ease-out;
+}
+
+.card-bart_text p{
+   line-height:0;
+}
+
+.card-bart_number{
+    visibility: hidden;
+}
+
+
+/*efecto de hover a la carta Bart*/
+
+.card-bart:hover{
+    background-color: white;
+    transform: translateX(50px);
+}
+
+.card-bart:hover .card-bart_text{
+    color: #000000;
+    font-size: 12px;
+}
+
+.card-bart:hover .card-bart_number{
+    width: 30%;
+    margin-right:8px ;
+    visibility: visible;
+    color: #1e6091;
+    line-height: 2;
+}
